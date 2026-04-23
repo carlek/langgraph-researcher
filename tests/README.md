@@ -13,7 +13,7 @@ pip install -e ".[test]"
 ### Run all tests
 
 ```bash
-pytest
+pytest -m pytest tests
 ```
 
 ### Run with coverage
