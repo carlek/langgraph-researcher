@@ -16,6 +16,7 @@ dependencies = [
 
 [project.optional-dependencies]
 cli = ["langgraph-cli[inmem]>=0.1"]
+test = ["pytest>=7.0", "pytest-cov>=4.0", "pytest-mock>=3.10"]
 
 [project.scripts]
 langgraph-researcher = "research_pipeline.driver:main"
@@ -27,3 +28,8 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 include = ["research_pipeline*"]
 exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --tb=short"
