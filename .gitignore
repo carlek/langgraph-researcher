@@ -25,6 +25,10 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.DS_Store
+
+# LangGraph stuff
+.langgraph_api/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

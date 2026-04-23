@@ -1,0 +1,8 @@
+{
+  "python_version": "3.12",
+  "dependencies": ["."],
+  "graphs": {
+    "research": "research_pipeline.graph:build_research_graph"
+  },
+  "env": "./.env"
+}
