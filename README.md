@@ -15,6 +15,8 @@ Key differences vs. the notebook:
 - **Driver-level HITL loop.** The graph is compiled with `interrupt_before=['human_feedback']`; the [driver.py](research_pipeline/driver.py) wraps the resume / re-run cycle so callers just pass a `feedback_fn`.
 - **A couple of small fixes** to the original code, called out inline in [nodes.py](research_pipeline/nodes.py#L83-L90) (`str.strip` misuse, bare `except`).
 
+![Diagram of research-assistant pipeline](pipeline-pic.png)
+
 ## Architecture
 
 Two graphs compose into one pipeline:
